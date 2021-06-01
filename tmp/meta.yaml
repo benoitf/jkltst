@@ -1,6 +1,10 @@
 ---
 permalink: /bar-plugin/
+layout: null
 ---
+# 
+# Comment
+# 
 apiVersion: v2
 publisher: zbr
 name: vscode-ansible
