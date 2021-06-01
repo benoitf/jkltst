@@ -1,6 +1,9 @@
 ---
 permalink: /foo-plugin
 ---
+# 
+# Comment
+# 
 apiVersion: v2
 publisher: zbr
 name: vscode-ansible
