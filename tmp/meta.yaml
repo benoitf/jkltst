@@ -1,0 +1,28 @@
+---
+permalink: /bar-plugin/
+---
+apiVersion: v2
+publisher: zbr
+name: vscode-ansible
+version: latest
+type: VS Code extension
+displayName: Ansible YAML schema verification, auto-complete, highlight problems reported by ansible-lint or yamllint and vault encryption and decryption.
+title: Ansible YAML schema
+description: Ansible YAML schema verification, auto-complete, highlight problems reported by ansible-lint or yamllint and vault encryption and decryption.
+icon: /v3/images/eclipse-che.png
+category: Other
+repository: 'https://github.com/ansible-community/vscode-ansible.git'
+firstPublicationDate: '2021-05-17'
+latestUpdateDate: '2021-05-17'
+spec:
+  containers:
+    - image: 'quay.io/fbenoit/ansible-toolset:20210517'
+      name: vscode-ansible
+      memoryLimit: 512Mi
+      cpuRequest: 30m
+      cpuLimit: 500m
+      env:
+        - name: VSCODE_API_VERSION
+          value: '1.52.0'      
+  extensions:
+    - https://gist.github.com/benoitf/c003f498ffb907245d4ba2ab19ddcc3a/raw/38253963f4853df2c9566a50dccba7692f6e2ead/vscode-ansible-0.4.3-downgrade.vsix
