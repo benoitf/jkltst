@@ -1,0 +1,12 @@
+schemaVersion: 2.1.0-alpha
+metadata:
+  name: che-theia
+projects:
+  - name: che-theia
+    git:
+      remotes:
+        origin: "https://github.com/eclipse-che/che-theia"
+components:
+  - name: tools
+    container:
+      image: quay.io/eclipse/che-java11-maven:nightly
